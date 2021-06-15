@@ -18,10 +18,13 @@
   },
   "homepage": "https://github.com/Sherryjsph3/own-your-meals#readme",
   "dependencies": {
+    "cloudinary": "^1.26.0",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
     "method-override": "^3.0.0",
-    "mongoose": "^5.12.13"
+    "mongoose": "^5.12.13",
+    "morgan": "^1.10.0"
   }
 }

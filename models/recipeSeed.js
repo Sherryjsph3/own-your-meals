@@ -237,7 +237,7 @@ module.exports = [
             '1 teaspoon fresh oregano',
             '1 teaspoon fresh rosemary',
         ],
-        description: 'You can precook the potatoes wedges in boiling salted water for 8 minutes before browning them. This will accelerate the potatoes cooking time in the skillet and ensure a nice golden crust on the potatoes.'
+        directions: 'You can precook the potatoes wedges in boiling salted water for 8 minutes before browning them. This will accelerate the potatoes cooking time in the skillet and ensure a nice golden crust on the potatoes.'
     },
     {
         name: 'Quinoa and Veggie Bowl',
@@ -250,7 +250,7 @@ module.exports = [
             '¾ cup quinoa',
             '1 cup peppers and onions'  
         ],
-        description: 'This 30 minute roasted vegan lunch bowl is made up of 5 delicious components: Chili-lime kale, quinoa, garlic roasted broccoli, roasted sriracha chickpeas, and curry roasted sweet potatoes.'
+        directions: 'This 30 minute roasted vegan lunch bowl is made up of 5 delicious components: Chili-lime kale, quinoa, garlic roasted broccoli, roasted sriracha chickpeas, and curry roasted sweet potatoes.'
     },
     {
         name: 'Chicken and Brown Rice',
@@ -262,7 +262,7 @@ module.exports = [
             '1/2 carrots',
             '1/2 spinach',
         ],
-        description: 'Our chicken and brown rice recipe is so easy to put together. Rich chicken broth ensures great flavor and moist and tender chicken in this savory variation of the classic skillet chicken and rice'
+        directions: 'Our chicken and brown rice recipe is so easy to put together. Rich chicken broth ensures great flavor and moist and tender chicken in this savory variation of the classic skillet chicken and rice'
     },
     {
         name: 'Ahi Tuna Steak and Asparagus',
@@ -273,7 +273,7 @@ module.exports = [
             '1 cup of grape tomatoes',
             '2 Ahi Tuna Steaks' 
         ],
-        description: 'The best, healthy, low carb, quick and easy oven roasted chicken and veggies, homemade with simple ingredients in sheet pan or one pan in 30 minutes. Loaded with Italian flavors'
+        directions: 'The best, healthy, low carb, quick and easy oven roasted chicken and veggies, homemade with simple ingredients in sheet pan or one pan in 30 minutes. Loaded with Italian flavors'
     },
     
 ]

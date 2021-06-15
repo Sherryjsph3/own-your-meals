@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>own your MEALS | Meal Diary</title>
+</head>
+<header>
+    <h1>own your MEALS</h1>
+    <nav>
+        <a href="/"><button>Home</button></a>
+    </nav>
+</header>
+
+<body>
+    <h2>MEALS for the week</h2>
+    <main>
+        <div>
+        <% recipes.forEach(recipe => { %>
+            <h5><%= recipe.name %></h5> 
+            <a href="/recipes/<%= recipe._id; %>"><img src=<%= recipe.image %> style="width:20%"></a>
+            
+        <%})%>
+    </div>
+    </main>
+    <a href="/recipes/new"><button>Add a New Recipe</button></a>
+
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>own your MEALS | Show Recipe</title>
+</head>
+<header>
+    <h1>own your MEALS</h1>
+    <nav>
+        <a href="/"><button>Home</button></a>
+        <a href="/recipes"><button>Diary</button></a>
+        <a href="/recipes/<%= recipe. id %>/edit"><button>Edit</button></a>
+        <a href="/"><button>Delete</button></a>
+        <form action="/recipes/<%=recipe._id%>?_method=DELETE" method="POST"></form>
+    </nav>
+</header>
+<body>
+    <section>
+    <h2><%= recipe.name %> </h2>
+    <img src="<%= recipe.image %>">
+    <h3>Time: <%= recipe.time %> </h3>
+    <h3>Ingredients:</h3>
+    <ul>
+        <% for(let i = 0; i < recipe.ingredients.length; i++)
+        { %>
+             <li><%= recipe.ingredients[i] %></li>
+        <% } %>
+    </ul>
+    <h3>Directions:</h3>
+    <p> <%= recipe.directions %></p>
+</section>
+
+</body>
+</html>

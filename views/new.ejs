@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>own your MEALS | New Recipe</title>
+</head>
+<header>
+    <h1>own your MEALS</h1>
+    <nav>
+        <a href="/"><button>Home</button></a>
+        <a href="/recipes"><button>Diary</button></a>
+    </nav>
+</header>
+<body>
+     <!-- ============= CONTAINER ============== -->
+     <div class="container">
+        <!-- sidebar -->
+        <div class="sidebar"></div>
+        <!-- new-recipe container -->
+        <div class="new-recipe">
+          <h2>New Recipe</h2>
+          <!-- START FORM -->
+          <form action="/recipes" method="POST" enctype="multipart/form-data">
+            <!-- fieldset for meal info -->
+            <fieldset class="meal-info">
+              <!-- legend for meal info -->
+              <legend>Meal Information</legend>
+                <!-- name -->
+                <label for="username">Name</label>
+                <input type="text" name="name" id="name" />
+
+                <!-- image -->
+                <label for="image">Image</label>
+			    <input type="file" name="image" id="image">
+
+                <!-- time -->
+                <label for="time">Time</label>
+                <input type="text" name="time" id="time"/>
+
+                <!-- ingredients -->
+                <label for="ingredients">Ingredients</label>
+                <input type="text" name="ingredients" id="ingredients"/>
+                <input type="text" name="ingredients" id="ingredients"/>
+                <input type="text" name="ingredients" id="ingredients"/>
+                <input type="text" name="ingredients" id="ingredients"/>
+                <input type="text" name="ingredients" id="ingredients"/>
+                <input type="text" name="ingredients" id="ingredients"/>
+                
+                <!-- directions -->
+                <label for="directions">Directons</label>
+                <input type="text" name="directions" id="directions"/>
+            
+            <!-- submit button -->
+            <input type="submit" value="Add a Recipe">
+          </form>
+        </div>
+      </div>
+    
+</body>
+</html>
