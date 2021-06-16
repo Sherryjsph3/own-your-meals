@@ -46,7 +46,29 @@ router.get('/new', (req, res) => {
 });
 
 
+//========== DELETE ==========
+
+router.delete('/:id', (req, res) => {
+    Recipe.findByIdAndRemove(req.params.id, (err, removedRecipe) => {
+        res.redirect('/recipes');
+    });
+});
+
+
+//========== UPDATE ==========
+
+router.put('/:id', (req, res) => {
+    Recipe.findByIdAndUpdate(
+        req.params.id, 
+        req.body, 
+        {new: true}, (err, updatedRecipe) => { //new:true returns the updated document
+            res.redirect(`/recipes/${req.params.id}`)//will take u to that recipe show page
+        })
+})
+
+
 //========== CREATE ==========
+
 router.post('/', (req, res) => {
 	const photo = req.files.image
 	photo.mv(`./uploads/${photo.name}`);
@@ -57,6 +79,18 @@ router.post('/', (req, res) => {
 	});
 });
 });
+
+
+//========== EDIT ==========
+
+router.get('/:id/edit', (req, res) => {
+    Recipe.findById(req.params.id, (err, foundRecipe) => {
+        res.render('edit.ejs', {
+            recipe: foundRecipe
+        });
+    });
+});
+
 
 //========== SHOW ==========
 
