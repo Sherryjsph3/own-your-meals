@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>own your MEALS | Edit Recipe</title>
+</head>
+<header>
+    <h1>own your MEALS</h1>
+    <nav>
+        <a href="/"><button>Home</button></a>
+
+    </nav>
+</header>
+
+<body>
+    <!-- ============= CONTAINER ============== -->
+    <div class="container">
+        <!-- sidebar -->
+        <div class="sidebar"></div>
+        <!-- new-recipe container -->
+        <div class="new-recipe">
+            <h2>Edit Recipe</h2>
+            <!-- START FORM -->
+            <form action="/recipes/<%= recipe._id %>?_method=PUT " method="POST" enctype="multipart/form-data">
+
+                <!-- fieldset for meal info -->
+                <fieldset class="meal-info">
+                    <!-- legend for meal info -->
+                    <legend>Meal Information</legend>
+                    <!-- name -->
+                    <label for="username">Name</label>
+                    <input type="text" name="name" id="name" value="<%= recipe.name %>" />
+
+                    <!-- image -->
+                    <label for="image">Image</label>
+                    <input type="url" name="image" id="image" value="<%= recipe.image %>" />
+
+                    <!-- time -->
+                    <label for="time">Time</label>
+                    <input type="text" name="time" id="time" value="<%= recipe.time %>" />
+
+                    <!-- ingredients -->
+                    <% recipe.ingredients.forEach(ingredient => { %>
+                    <label for="ingredients">Ingredients</label>
+                    <input type="text" name="ingredients" id="ingredients" value="<%= ingredient %>"/>
+                    <% } )%>
+
+                    <!-- directions -->
+                    <label for="directions">Directions</label>
+                    <input type="text" name="directions" id="directions" value="<%= recipe.directions %>" />
+
+                    <!-- submit button -->
+                    <input type="submit" value="Edit Recipe">
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

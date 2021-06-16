@@ -45,5 +45,5 @@ A full stack application that allows you to add recipes to your meal diary. Afte
 
 ## Future Enhancements
 * The ability for the user to be able to login and logout
-* The ability for the user to click on every image from the recipe library and see how to info for each individual recipe
+* The ability for the user to click on every image from the recipe library and and be able to add to specific day of the week in the weekly diary
 * The ability for the user to create a shopping list for a grocery shop
