@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* ========== HOMEPAGE ========== */
+.h1-home {
+    font-family: 'Poiret One', cursive;
+    color: white;
+    text-align: center;
+}
+
+.body-home {
+    background-image: url(https://i.imgur.com/MANgDDZ.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    font-family: 'Poiret One', cursive;
+    color: white;
+}
+
+.p-home {
+   margin-top: 390px;
+    padding: 40px;
+    font-size: 30px;
+}
+
+a > button {
+    font-family: 'Poiret One', cursive;
+    position: relative;
+    left: 20px;
+    top: 400px;
+    font-size: 20px; 
+    padding: 8px;
+    box-shadow:3px 3px 3px rgb(41, 41, 41, 0.70); 
+    background-color: rgb(71, 122, 65, 0.70);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    margin: 8px;
+
+     /* background-color: rgb(218, 190, 159, 0.85); */
+    /* background-color: rgb(124, 154, 153, 0.70); */
+    /* background-color: rgb(71, 122, 65, 0.70); */
+    /* background-color: rgb(197, 73, 65, 0.70); */
+}
+
+a > button:hover {
+    background-color: rgb(255, 255, 255, .70);
+    color: black;
+}
+
+.fa-instagram,
+.fa-facebook,
+.fa-youtube {
+    color: white;
+    display: inline-block;
+    padding: 8px;
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+}
+
+/* ========== INDEX PAGE ========== */
+
+.h1-index {
+    font-family: 'Poiret One', cursive;
+    color: black;
+    text-align: center;
+}

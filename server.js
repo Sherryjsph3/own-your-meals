@@ -38,11 +38,12 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 
 app.get('/', (req, res) => res.render('homepage.ejs'));
 
-
 //========== MOUNT MIDDLEWARE ==========
+
 app.use(fileUpload({ createParentPath: true }));//creates req.files
-app.use(express.urlencoded({ extended: false}));//creates req.body & has 2b 1st inorder 4 the controller 2 handle the body object
+app.use(express.urlencoded({ extended: true}));//creates req.body & has 2b 1st inorder 4 the controller 2 handle the body object
 app.use(methodOverride('_method'));
+app.use(express.static('public'));
 app.use(logger('dev')); //creates the server log
 
 
