@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- local CSS -->
+      <link rel="stylesheet" href="/styles.css">
+      <!-- Compiled and minified CSS -->
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+      <!-- Compiled and minified JavaScript -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
     <title>own your MEALS | New Recipe</title>
 </head>
 <header>
@@ -22,7 +33,7 @@
         <div class="sidebar"></div>
         <!-- new-recipe container -->
         <div class="new-recipe">
-            <h2>New Recipe</h2>
+            <h2 class="h2-new">New Recipe</h2>
             <!-- START FORM -->
             <form action="/recipes" method="POST" enctype="multipart/form-data">
                 <!-- fieldset for meal info -->
@@ -30,32 +41,34 @@
                     <!-- legend for meal info -->
                     <legend>Meal Information</legend>
                     <!-- name -->
-                    <label for="username">Name</label>
-                    <input type="text" name="name" id="name" />
+                    <label class="input-lable" for="username">Name</label>
+                    <input class="input-new" type="text" name="name" id="name" />
 
                     <!-- image -->
-                    <label for="image">Image</label>
-                    <input type="file" name="image" id="image">
+                    <label class="input-lable" for="image">Image</label>
+                    <input class="input-new" type="file" name="image" id="image">
 
                     <!-- time -->
-                    <label for="time">Time</label>
-                    <input type="text" name="time" id="time" />
+                    <label class="input-lable" for="time">Time</label>
+                    <input class="input-new" type="text" name="time" id="time" />
 
                     <!-- ingredients -->
-                    <label for="ingredients">Ingredients</label>
-                    <input type="text" name="ingredients" id="ingredients" />
+                    <label class="input-lable" for="ingredients">Ingredients</label>
+                    <input class="input-new" type="text" name="ingredients" id="ingredients" />
             
-
                     <!-- directions -->
-                    <label for="directions">Directions</label>
-                    <input type="text" name="directions" id="directions" />
+                    <label class="input-lable" for="directions">Directions</label>
+                    <input class="input-new" type="text" name="directions" id="directions" />
 
                     <!-- submit button -->
-                    <input type="submit" value="Add a Recipe">
+                    <input class="input-submit" type="submit" value="Add a Recipe">
             </form>
         </div>
     </div>
 
 </body>
+<footer class="ftr-new">
+    <p>copyright &copy; all rights reserved 2021 own your MEALS</p>
+</footer>
 
 </html>

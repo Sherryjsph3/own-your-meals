@@ -21,7 +21,7 @@ module.exports = [
         ingredients: [
             '5 mushrooms',
             '1 spring onion',
-            '2 arge eggs',
+            '2 large eggs',
             'gruyere cheese',
             'spinach'   
         ],
@@ -216,7 +216,7 @@ module.exports = [
         directions: 'The basic concept for all the sushi rolls are similar, but the details often differ. Typically, spicy tuna roll is made of 3 main ingredients. Sushi rice (steamed rice seasoned with sushi vinegar), nori (seaweed), and sashimi-grade tuna.'
     },
     {
-        name: 'Teriayki Salmon with Zuchinni Noodles',
+        name: 'Teriyaki Salmon with Zuchinni Noodles',
         image: 'https://i.imgur.com/rH2ic38.jpg',
         time: '25 minutes',
         ingredients: [
