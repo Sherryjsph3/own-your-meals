@@ -235,10 +235,17 @@ section {
     --light-green: #c6d8ab;
     --purple: #B67D9A;
   }
+.body-new {
+    background-image: url(https://i.imgur.com/VXSJzDV.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    font-family: 'Poiret One', cursive; 
+    color: rgb(229, 109, 96);
+}
 .container {
-    width: 70vw;
-    height: 60vw;
-    margin: 50px auto;
+    width: 65vw;
+    height: 55vw;
+    margin: 150px auto;
     display: flex;
     border-radius: 10px;
     box-shadow: 1px 1px 10px #ddd,
@@ -251,12 +258,12 @@ section {
     background: url('https://i.imgur.com/n7PXEEN.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
   }
   .new-recipe {
     width: 50%;
     background: #f9f9f9;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 20px 20px 0;
     padding: 15px;
     box-sizing: border-box;
     overflow: auto;
@@ -264,8 +271,8 @@ section {
   .h2-new {
     font-family: 'Poiret One', cursive; 
     font-weight: 500;
-    color: var(--bright-orange);
-    border-bottom: 2px solid var(--bright-green);
+    color: rgb(229, 109, 96);
+    border-bottom: 2px solid rgb(137, 159, 156);;
   }
 .input-new {
     width: 100%;
@@ -273,23 +280,31 @@ section {
     padding: 10px;
     font-family: 'Poiret One', cursive; 
     box-sizing: border-box;
-    border: 1px solid var(--light-green);
+    border: 1px solid rgb(71, 122, 65, 0.70);
     border-radius: 5px;
   }
   .input-submit {
     width: 100%;
     height: 50px;
-    background: var(--bright-orange);
-    box-shadow: 2px 2px var(--light-green);
+    background: rgb(71, 122, 65, 0.70);
+    box-shadow: 2px 2px 2px rgb(229, 109, 96, 0.70);
     font-family: 'Poiret One', cursive;  
     font-size: 1.3em;
     color: whitesmoke;
     border: 0px;
     transition: 0.2s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .input-submit:hover {
+    cursor: pointer;
+    background: rgb(229, 109, 96, 0.70);
+    box-shadow: 2px 2px 2px rgb(71, 122, 65, 0.70);
+  
   }
 
 fieldset {
-    border: 1px solid #ccc;
+    border: 1px solid rgb(218, 190, 159);
     border-radius: 5px;
     padding: 20px;
     margin: 20px 0;
@@ -298,11 +313,11 @@ fieldset {
     padding: 0px 10px;
     font-family: 'Poiret One', cursive;  
     font-weight: 500;
-    color: var(--purple);
+    color: rgb(140, 178, 190);
   }
   .input-label {
     font-family: 'Poiret One', cursive;  
     font-weight: 200;
-    color: var(--bright-orange);
+    color: rgb(229, 109, 96);
     display: block;
   }
