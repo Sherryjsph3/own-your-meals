@@ -24,7 +24,7 @@
     font-size: 30px;
 }
 
-a > button {
+.tag > .click {
     font-family: 'Poiret One', cursive;
     position: relative;
     left: 20px;
@@ -37,14 +37,9 @@ a > button {
     border-radius: 10px;
     border: none;
     margin: 8px;
-
-     /* background-color: rgb(218, 190, 159, 0.85); */
-    /* background-color: rgb(124, 154, 153, 0.70); */
-    /* background-color: rgb(71, 122, 65, 0.70); */
-    /* background-color: rgb(197, 73, 65, 0.70); */
 }
 
-a > button:hover {
+.tag > .click:hover {
     background-color: rgb(255, 255, 255, .70);
     color: black;
 }
@@ -59,11 +54,11 @@ a > button:hover {
     font-size: 1.2rem;
 }
 
-footer {
+.ftr-home {
     position: absolute;
     bottom: 0;
     width: 100%;
-    font-size: 15px;
+    font-size: 12px;
     color: white;
     text-align: center;
     font-family: 'Poiret One', cursive;
@@ -71,8 +66,157 @@ footer {
 
 /* ========== INDEX PAGE ========== */
 
+.aidx > .idxbn {
+    float: right;
+    margin: 3px 20px 3px 3px;
+    font-size: 15px; 
+    box-shadow:3px 3px 3px rgb(41, 41, 41, 0.70); 
+    background-color: rgb(71, 122, 65, 0.70);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Poiret One', cursive;  
+}
+
+.aidx > .idxbn:hover {
+    background-color: rgb(255, 255, 255, .70);
+    color: black;
+}
+
 .h1-index {
     font-family: 'Poiret One', cursive;
-    color: black;
+    color: rgb(71, 122, 65);
     text-align: center;
 }
+
+.body-index {
+    font-family: 'Poiret One', cursive;
+    background-color: rgb(233, 211, 184, 0.70);
+}
+
+.main-index {
+    display: flex;/* display horizontally so they ar sitting inside a main container what can give us that ability*/
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 110px 80px 20px auto;
+}
+
+div.hoverable {
+    width: 175px;
+    height: 238px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 20px;
+    border-radius: 25px;
+    background-color: rgb(207, 210, 198, 0.90);
+}
+
+.meals {
+    border-radius: 8px;
+    box-shadow:2px 2px 2px rgb(41, 41, 41, 0.60);
+}
+
+.h2-index {
+    font-size: 38px;
+    margin-left: 28px;
+    margin-top: 90px;
+    color: rgb(71, 122, 65);
+}
+
+.h5-index {
+    font-size: 13px;
+    margin-top: 2px;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+}
+
+.ftr-index {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    color: rgb(71, 122, 65);
+}
+
+/* ========== SHOW PAGE ========== */
+
+.body-show {
+    background-color: rgb(233, 211, 184, 0.70);
+    font-family: 'Poiret One', cursive;
+    /* max-width: 900px; */
+    /* min-height: 100vh; */
+}
+
+.h1-show {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.h2-show {
+    text-align: center;
+    font-size: 35px;
+}
+
+section {
+     margin: -250px auto 0px 600px;
+    max-width: 300px;  
+}
+
+.img-show {
+    margin-left: 280px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow:4px 4px 4px rgb(41, 41, 41, 0.70); 
+}
+
+.h3-show {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.ashow > .bnshow {
+    font-size: 15px; 
+    box-shadow:3px 3px 3px rgb(41, 41, 41, 0.70); 
+    background-color: rgb(71, 122, 65, 0.70);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: 'Poiret One', cursive;  
+}
+
+.ashow > .bnshow:hover {
+    background-color: rgb(255, 255, 255, .70);
+    color: black;
+}
+
+.ashow > .bshow {
+    float: right;
+    font-size: 15px; 
+    margin: 3px 20px 3px 3px;
+    box-shadow:3px 3px 3px rgb(41, 41, 41, 0.70); 
+    background-color: rgb(71, 122, 65, 0.70);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Poiret One', cursive;  
+}
+
+.ashow > .bshow:hover {
+    background-color: rgb(255, 255, 255, .70);
+    color: black;
+}
+
+.ftr-show {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    color: rgb(71, 122, 65);
+}
+

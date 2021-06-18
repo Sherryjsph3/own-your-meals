@@ -69,7 +69,7 @@ module.exports = [
         directions: 'These healthy breakfast burrito recipes are loaded with vegetables, lean proteins, and wrapped up in a tortilla for on-the-go eating. Get the recipes here'
     },
     {
-        name: 'Hawaiian ',
+        name: 'Hawaiian Acai Bowl',
         image: 'https://i.imgur.com/wY0fh2J.jpg',
         time: '20 minutes',
         ingredients: [
@@ -228,7 +228,7 @@ module.exports = [
         directions: 'Zucchini tends to render some water when cooking, so you can sprinkle with salt after spiralizing and allow to sit for a couple of minutes to drain off excess water. Rinse well to get rid of salt and drain thoroughly in a colander and pat dry before cooking'
     },
     {
-        name: 'Steak and Pototoes',
+        name: 'Steak and Potatoes',
         image: 'https://i.imgur.com/ExxC3RT.jpg',
         time: '38 minutes',
         ingredients: [
@@ -274,6 +274,42 @@ module.exports = [
             '2 Ahi Tuna Steaks' 
         ],
         directions: 'The best, healthy, low carb, quick and easy oven roasted chicken and veggies, homemade with simple ingredients in sheet pan or one pan in 30 minutes. Loaded with Italian flavors'
+    },
+    {
+        name: 'Mixed Nuts',
+        image: 'https://i.imgur.com/Lsr8KZu.jpg',
+        time: '1 minute',
+        ingredients: [
+            '10 cashews',
+            '10 almond',
+            '10 pecans',
+            '10 pistachios',
+        ],
+        directions: 'Learn how to cut and seed a pomegranate with this simple step by step tutorial. This method is quick, easy, and saves you a ton of money! This step-by-step tutorial will show you how to cut a pomegranate and easily remove the seeds without getting cracked skin'
+    },
+    {
+        name: 'Pomegranate',
+        image: 'https://i.imgur.com/LmTW978.jpg',
+        time: '5 minutes',
+        ingredients: [
+            ' 1 pomegranate',
+            '1/4 stevia',
+        ],
+        directions: 'Learn how to cut and seed a pomegranate with this simple step by step tutorial. This method is quick, easy, and saves you a ton of money! This step-by-step tutorial will show you how to cut a pomegranate and easily remove the seeds without getting cracked skin'
+    },
+    {
+        name: 'Yogurt Oat Blueberry Muffins',
+        image: 'https://i.imgur.com/TRcwt2Z.jpg',
+        time: '37 minutes',
+        ingredients: [
+            '1 tsp Baking powder',
+            '1/2 tsp Baking soda',
+            '1 cups Blueberries',
+            '1/4 tsp Cinnamon',
+            '1 cup Greek yogurt',
+            '1 cup Rolled oats'
+        ],
+        directions: 'Easy and delicious, these healthy yogurt oat blueberry muffins (OR chocolate chips) are a household staple for breakfast and snacks. Yum'
     },
     
 ]

@@ -4,34 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- local CSS -->
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
     <title>own your MEALS | Show Recipe</title>
 </head>
-<header>
-    <h1>own your MEALS</h1>
-    <nav>
-        <a href="/"><button>Home</button></a>
-        <a href="/recipes"><button>Diary</button></a>
-        <a href="/recipes/<%= recipe. id %>/edit"><button>Edit</button></a>
-        <form action="/recipes/<%=recipe._id%>?_method=DELETE" method="POST"><a href="/recipes"><button>Delete</button></a>
-        </form>
-    </nav>
+<header class="hdr-show">
+    <h1 class="h1-show">own your MEALS</h1>
+    
+        <a class="ashow" href="/"><button class="bshow">Home</button></a>
+        <a class="ashow" href="/recipes"><button class="bshow">Diary</button></a>
+        <a class="ashow" href="/recipes/<%= recipe. id %>/edit"><button class="bshow">Edit</button></a>
+    
 </header>
-<body>
+<br/>
+<br/>
+<body class="body-show">
+    
+    <h2 class="h2-show"><%= recipe.name %> </h2>
+    <br/>
+    <img class="img-show" src="<%= recipe.image %>">
+
     <section>
-    <h2><%= recipe.name %> </h2>
-    <img src="<%= recipe.image %>">
-    <h3>Time: <%= recipe.time %> </h3>
-    <h3>Ingredients:</h3>
+        
+    <h3 class="h3-show">Time:</h3> <%= recipe.time %> 
+    <h3 class="h3-show">Ingredients:</h3>
     <ul>
         <% for(let i = 0; i < recipe.ingredients.length; i++)
         { %>
              <li><%= recipe.ingredients[i] %></li>
         <% } %>
     </ul>
-
-    <h3>Directions:</h3>
+    <h3 class="h3-show">Directions:</h3>
     <p> <%= recipe.directions %></p>
+    <br/>
+    <br/>
+
+    <form action="/recipes/<%=recipe._id%>?_method=DELETE" method="POST">
+       <a class="ashow" href="/recipes"><button class="bnshow">Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X</button></a>
+        </form>
 </section>
 
+
 </body>
+<footer class="ftr-show">
+    <p>copyright &copy; all rights reserved 2021 own your MEALS</p>
+</footer>
 </html>

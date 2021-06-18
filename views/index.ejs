@@ -15,28 +15,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <title>own your MEALS | Meal Diary</title>
+
 </head>
 <header>
     <h1 class="h1-index">own your MEALS</h1>
-        <a href="/"><button>Home</button></a>  
+    <a class="aidx" href="/"><button class="idxbn">Home</button></a>
+    <a class="aidx" href="/recipes/new"><button class="idxbn">Add a New Recipe</button></a>
 </header>
 
-<body>
-    <h2>MEALS for the week</h2>
-    <article>
-        <div>
+<body class="body-index">
+    <h2 class="h2-index">MEALS for the week</h2>
+
+    <main class="main-index">
         <% recipes.forEach(recipe => { %>
-            <h5><%= recipe.name %></h5> 
-            <a href="/recipes/<%= recipe._id; %>"><img src=<%= recipe.image %> style="width:20%"></a>
-            
+
+        <div class="card-panel hoverable">
+            <h5 class="h5-index"><%= recipe.name %></h5>
+            <a href="/recipes/<%= recipe._id; %>"><img class="meals" src=<%= recipe.image %> style="width:100%"></a>
+
+        </div>
         <%})%>
-    </div>
-    </article>
+
     </main>
-    <a href="/recipes/new"><button>Add a New Recipe</button></a>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
-<footer>
-    <p class="footer-home">copyright &copy; all rights reserved 2021 own your MEALS</p>
+<footer class="ftr-index">
+    <p>copyright &copy; all rights reserved 2021 own your MEALS</p>
 </footer>
+
 </html>
