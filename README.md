@@ -11,7 +11,7 @@ A full stack application that allows you to add recipes to your meal diary. Afte
 * Express
 * MongoDB
 * Mongoose
-* Materialzie
+* [Materialzie](https://materializecss.com/)
 * [Icons](https://fontawesome.com/icons?d=gallery&p=2)
 * [Figma](https://www.figma.com/files/user/979381893432674988?fuid=979381893432674988)
 * [Pinterest](https://www.pinterest.com/)
@@ -29,16 +29,15 @@ A full stack application that allows you to add recipes to your meal diary. Afte
 
 ## Screenshots
 ### Wireframe
-![own your MEALS wireframe]()
+![own your MEALS wireframe](imgs/own-your-meals-wireframe.png)
+![own your MEALS wireframe extra](imgs/own-your-meals-wireframe-extra.png)
 
 ### Working App 
-![own your MEALS hompage ]()
-![own your MEALS index page]()
-![own your MEALS show page]()
-![own your MEALS create page]()
-![own your MEALS edit page]()
-![own your MEALS recipe library page]()
-![own your MEALS shopping list page]()
+![own your MEALS hompage](imgs/own-your-meals-home.png)
+![own your MEALS index page](imgs/own-your-meals-index.jpg)
+![own your MEALS show page](imgs/own-your-meals-show.png)
+![own your MEALS edit page](imgs/own-your-meals-edit.png)
+![own your MEALS new page](imgs/own-your-meals-new.png)
 
 ## Getting Started
 
@@ -46,5 +45,5 @@ A full stack application that allows you to add recipes to your meal diary. Afte
 
 ## Future Enhancements
 * The ability for the user to be able to login and logout
-* The ability for the user to click on every image from the recipe library and and be able to add to a specific day of the week in the weekly diary
+* The ability for the user to add a recipe from the library to a specific day of the week in the diary.
 * The ability for the user to create a shopping list for a grocery shop
