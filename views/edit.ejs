@@ -38,26 +38,26 @@
                     <!-- legend for meal info -->
                     <legend>Meal Information</legend>
                     <!-- name -->
-                    <label class="input-label" for="username">Name</label>
+                    <label class="inpt-lable" for="username">Name</label>
                     <input class="input-edit" type="text" name="name" id="name" value="<%= recipe.name %>" />
 
                     <!-- image -->
-                    <label class="input-label" for="image">Image</label>
-                    <input class="input-edit" type="url" name="image" id="image" value="<%= recipe.image %>" />
+                    <label class="inpt-lable" for="image">Image</label>
+                    <input class="input-edit" type="file" name="image" id="image">
 
                     <!-- time -->
-                    <label class="input-label" for="time">Time</label>
+                    <label class="inpt-lable" for="time">Time</label>
                     <input class="input-edit" type="text" name="time" id="time" value="<%= recipe.time %>" />
 
                     <!-- ingredients -->
-                    <label class="input-label" for="ingredients">Ingredients</label>
+                    <label class="inpt-lable" for="ingredients">Ingredients</label>
                     <% recipe.ingredients.forEach(ingredient => { %>
                     
                     <input class="input-edit" type="text" name="ingredients" id="ingredients" value="<%= ingredient %>"/>
                     <% } )%>
 
                     <!-- directions -->
-                    <label class="input-label" for="directions">Directions</label>
+                    <label class="inpt-lable" for="directions">Directions</label>
                     <input class="input-edit" type="text" name="directions" id="directions" value="<%= recipe.directions %>" />
 
                     <!-- submit button -->

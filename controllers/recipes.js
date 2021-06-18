@@ -57,6 +57,11 @@ router.delete('/:id', (req, res) => {
 //========== UPDATE ==========
 
 router.put('/:id', (req, res) => {
+
+    const photo = req.files.image
+    photo.mv(`./uploads/${photo.name}`);
+    cloudinary.uploader.upload(`./uploads/${photo.name}`, function (error, result) {
+        req.body.image = result.secure_url;
     Recipe.findByIdAndUpdate(
         req.params.id,
         req.body, {
@@ -64,6 +69,7 @@ router.put('/:id', (req, res) => {
         }, (err, updatedRecipe) => { //new:true returns the updated document
             res.redirect(`/recipes/${req.params.id}`) //will take u to that recipe show page
         })
+})
 })
 
 

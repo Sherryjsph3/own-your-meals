@@ -9,7 +9,6 @@
     color: white;
     text-align: center;
 }
-
 .body-home {
     background-image: url(https://i.imgur.com/MANgDDZ.jpg);
     background-size: 110%;
@@ -17,13 +16,11 @@
     font-family: 'Poiret One', cursive;
     color: white;
 }
-
 .p-home {
    margin-top: 390px;
     padding: 40px;
     font-size: 30px;
 }
-
 .tag > .click {
     font-family: 'Poiret One', cursive;
     position: relative;
@@ -34,16 +31,14 @@
     box-shadow:3px 3px 3px rgb(41, 41, 41, 0.70); 
     background-color: rgb(71, 122, 65, 0.70);
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     border: none;
     margin: 8px;
 }
-
 .tag > .click:hover {
     background-color: rgb(255, 255, 255, .70);
     color: black;
 }
-
 .fa-instagram,
 .fa-facebook,
 .fa-youtube {
@@ -53,7 +48,6 @@
     text-align: right;
     font-size: 1.2rem;
 }
-
 .ftr-home {
     position: absolute;
     bottom: 0;
@@ -77,30 +71,28 @@
     border: none;
     font-family: 'Poiret One', cursive;  
 }
-
 .aidx > .idxbn:hover {
     background-color: rgb(255, 255, 255, .70);
     color: black;
 }
-
 .h1-index {
     font-family: 'Poiret One', cursive;
     color: rgb(71, 122, 65);
     text-align: center;
 }
-
 .body-index {
     font-family: 'Poiret One', cursive;
-    background-color: rgb(233, 211, 184, 0.70);
+    /* background-color: rgb(233, 211, 184, 0.70); */
+    background-image: url(https://i.imgur.com/W2vUEVD.jpg);
+    background-size: 110%;
+    /* background-repeat: no-repeat; */
 }
-
 .main-index {
-    display: flex;/* display horizontally so they ar sitting inside a main container what can give us that ability*/
+    display: flex;
     flex-wrap: wrap;
     max-width: 900px;
     margin: 110px 80px 20px auto;
 }
-
 div.hoverable {
     width: 175px;
     height: 238px;
@@ -111,22 +103,19 @@ div.hoverable {
     border-radius: 25px;
     background-color: rgb(207, 210, 198, 0.90);
 }
-
 .meals {
     border-radius: 8px;
     box-shadow:2px 2px 2px rgb(41, 41, 41, 0.60);
 }
-
 .h2-index {
     font-size: 38px;
     margin-left: 28px;
     margin-top: 90px;
-    color: rgb(71, 122, 65);
+    color: rgb(71, 122, 65, 0.70);
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-position: under; 
 }
-
 .h5-index {
     font-size: 13px;
     margin-top: 2px;
@@ -134,7 +123,6 @@ div.hoverable {
     font-weight: bolder;
     color: black;
 }
-
 .ftr-index {
     /* position: absolute; */
     bottom: 0;
@@ -148,43 +136,35 @@ div.hoverable {
 /* ========== SHOW PAGE ========== */
 
 .body-show {
-    /* background-color: rgb(233, 211, 184, 0.70); */
-    
     font-family: 'Poiret One', cursive;
-    background-image: url(https://i.imgur.com/XGu08LD.jpg);
+    background-image: url(https://i.imgur.com/9ytp2ce.jpg);
     background-size: 110%;
     background-repeat: no-repeat;
 }
-
 .h1-show {
     text-align: center;
     margin-top: 20px;
-    color: rgb(71, 122, 65, 0.70);;
+    color: rgb(71, 122, 65);
 }
-
 .h2-show {
     text-align: center;
     font-size: 35px;
     color: rgb(71, 122, 65, 0.70);;
 }
-
 section {
      margin: -250px auto 0px 600px;
     max-width: 300px;  
 }
-
 .img-show {
     margin-left: 230px;
     width: 300px;
     border-radius: 20px;
     box-shadow:4px 4px 4px rgb(41, 41, 41, 0.70); 
 }
-
 .h3-show {
     font-size: 25px;
     font-weight: bolder;
 }
-
 .ashow > .bnshow {
     font-size: 15px; 
     box-shadow:3px 3px 3px rgb(41, 41, 41, 0.70); 
@@ -194,12 +174,10 @@ section {
     border: none;
     font-family: 'Poiret One', cursive;  
 }
-
 .ashow > .bnshow:hover {
     background-color: rgb(255, 255, 255, .70);
     color: black;
 }
-
 .ashow > .bshow {
     float: right;
     font-size: 15px; 
@@ -211,12 +189,10 @@ section {
     border: none;
     font-family: 'Poiret One', cursive;  
 }
-
 .ashow > .bshow:hover {
     background-color: rgb(255, 255, 255, .70);
     color: black;
 }
-
 .ftr-show {
     position: absolute;
     bottom: 0;
@@ -228,30 +204,28 @@ section {
 }
 
 /* ========== NEW PAGE ========== */
-:root {
-    --bright-orange: #F18963;
-    --light-orange: #f5ac91;
-    --bright-green: #A0BE73;
-    --light-green: #c6d8ab;
-    --purple: #B67D9A;
-  }
+
 .body-new {
-    background-image: url(https://i.imgur.com/VXSJzDV.jpg);
+    background-image: url(https://i.imgur.com/9ytp2ce.jpg);
     background-size: 110%;
     background-repeat: no-repeat;
     font-family: 'Poiret One', cursive; 
     color: rgb(229, 109, 96);
+}
+.h1-new {
+    text-align: center;
+    color: rgb(71, 122, 65);
+    margin-top: 60px;
+    font-size: 60px;
+    font-weight: lighter;
 }
 .container {
     width: 65vw;
     height: 55vw;
     margin: 150px auto;
     display: flex;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px #ddd,
-                -1px -1px 10px #ddd,
-                1px -1px 10px #ddd,
-                -1px 1px 10px #ddd;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(41, 41, 41, 0.60);
   }
   .sidebar {
     width: 50%;
@@ -283,14 +257,14 @@ section {
     border: 1px solid rgb(71, 122, 65, 0.70);
     border-radius: 5px;
   }
-  .input-submit {
-    width: 100%;
-    height: 50px;
-    background: rgb(71, 122, 65, 0.70);
-    box-shadow: 2px 2px 2px rgb(229, 109, 96, 0.70);
+  .input-submitnw {
+    width: 80%;
+    height: 40px;
+    background: rgb(71, 122, 65, 0.60);
+    box-shadow: 2px 2px 2px rgb(233, 141, 116, 0.70);
     font-family: 'Poiret One', cursive;  
     font-size: 1.3em;
-    color: whitesmoke;
+    color: white;
     border: 0px;
     transition: 0.2s ease-in-out;
     border-radius: 10px;
@@ -298,9 +272,8 @@ section {
 
   .input-submit:hover {
     cursor: pointer;
-    background: rgb(229, 109, 96, 0.70);
+    background: rgb(233, 141, 116, 0.70);
     box-shadow: 2px 2px 2px rgb(71, 122, 65, 0.70);
-  
   }
 
 fieldset {
@@ -321,3 +294,180 @@ fieldset {
     color: rgb(229, 109, 96);
     display: block;
   }
+  input[type=file]::file-selector-button {
+    border: none;
+    font-family: 'Poiret One', cursive; 
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: rgb(71, 122, 65, 0.60);
+    box-shadow: 1px 1px 1px rgb(233, 141, 116, 0.70);
+    transition: 1s;
+    color: white;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: rgb(233, 141, 116, 0.70);
+    box-shadow: 1px 1px 1px rgb(71, 122, 65, 0.60);
+    border: none;
+  }
+  .anew > .bnew {
+   float: right;
+    font-size: 15px; 
+    box-shadow:3px 3px 3px rgb(41, 41, 41, 0.70); 
+    margin: 3px 20px 3px 3px;
+    background-color: rgb(71, 122, 65, 0.70);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Poiret One', cursive;  
+}
+
+.anew > .bnew:hover {
+    background-color: rgb(255, 255, 255, .70);
+    color: black;
+}
+.ftr-new {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    color: rgb(71, 122, 65);
+}
+
+/* ========== EDIT PAGE ========== */
+.body-edit {
+    background-image: url(https://i.imgur.com/9ytp2ce.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    font-family: 'Poiret One', cursive; 
+    color: rgb(229, 109, 96);
+    
+}
+.h1-edit {
+    text-align: center;
+    color: rgb(71, 122, 65);
+    margin-top: 60px;
+    font-size: 62px;
+    font-weight: lighter;
+}
+ .container-edit {
+    width: 55vw;
+    height: 45vw;
+    margin: 160px auto;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(41, 41, 41, 0.60);
+  }
+  .sidebar-edit {
+    width: 85%;
+    background-size: cover;
+    background-position: right;
+    background-repeat:no-repeat;
+    border-radius: 20px 0 0 20px;
+  }
+  .edit-recipe {
+    width: 50%;
+    background: #f9f9f9;
+    border-radius: 0 20px 20px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+  .h2-edit {
+    font-family: 'Poiret One', cursive; 
+    font-weight: 500;
+    color: rgb(229, 109, 96);
+    border-bottom: 2px solid rgb(137, 159, 156);
+  }
+.input-edit {
+    width: 100%;
+    margin: 8px 0;
+    padding: 5px;
+    font-family: 'Poiret One', cursive; 
+    box-sizing: border-box;
+    border: 1px solid rgb(71, 122, 65, 0.70);
+    border-radius: 5px;
+    font-size: 10px;
+  }
+  .input-submit {
+    width: 55%;
+    height: 25px;
+    background: rgb(71, 122, 65, 0.60);
+    box-shadow: 2px 2px 2px rgb(233, 141, 116, 0.70);
+    font-family: 'Poiret One', cursive;  
+    font-size: .95em;
+    color: white;
+    border: 0px;
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .input-submit:hover {
+    cursor: pointer;
+    background: rgb(233, 141, 116, 0.70);
+    box-shadow: 2px 2px 2px rgb(71, 122, 65, 0.70);
+  }
+
+fieldset {
+    border: 1px solid rgb(218, 190, 159);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  legend {
+    padding: 0px 10px;
+    font-family: 'Poiret One', cursive;  
+    font-weight: 500;
+    color: rgb(140, 178, 190);
+  }
+  .inpt-lable {
+    font-family: 'Poiret One', cursive;  
+    font-weight: 200;
+    font-size: 12px;
+    color: rgb(229, 109, 96);
+    display: block;
+  }
+  input[type=file]::file-selector-button {
+    border: none;
+    font-family: 'Poiret One', cursive; 
+    padding: .2em .4em;
+    border-radius: .2em;
+    background-color: rgb(71, 122, 65, 0.60);
+    box-shadow: 1px 1px 1px rgb(233, 141, 116, 0.70);
+    transition: 1s;
+    color: white;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: rgb(233, 141, 116, 0.70);
+    box-shadow: 1px 1px 1px rgb(71, 122, 65, 0.60);
+    border: none;
+  }
+  .aedit > .bedit {
+   float: right;
+    font-size: 15px; 
+    box-shadow:3px 3px 3px rgb(41, 41, 41, 0.70); 
+    margin: 3px 20px 3px 3px;
+    background-color: rgb(71, 122, 65, 0.70);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Poiret One', cursive;  
+}
+
+.aedit > .bedit:hover {
+    background-color: rgb(255, 255, 255, .70);
+    color: black;
+}  
+.ftr-edit {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    color: rgb(71, 122, 65);
+}
+
