@@ -42,9 +42,9 @@ A full stack application that allows you to add recipes to your meal diary. Afte
 
 ## Getting Started
 
-* [Click here]() to see the deployed app!
+* [Click here](https://own-your-meals.herokuapp.com/) to see the deployed app!
 
 ## Future Enhancements
-* The ability for the user to be able to login and logout
-* The ability for the user to add a recipe from the library to a specific day of the week in the diary.
+* The ability for the user to login and logout
+* The ability for the user to add a recipe from the library to a specific day of the week in their diary.
 * The ability for the user to create a shopping list for a grocery shop
