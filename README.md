@@ -1,6 +1,6 @@
 # own your MEALS
 
-A full stack application that allows you to add recipes to your meal diary. After competing as a bodybuilder and being on a very strict diet for nearly five years, I wanted a way to maintain the structure and discipine of a healthy meal plan while keeping meals interesting.
+A full stack application that allows you to add recipes to your meal diary. After competing as a bodybuilder and being on a very strict diet for nearly five years, I wanted to maintain the structure and discipline of a healthy meal plan while keeping meals interesting. Goals are personal and own your MEALS motivates you to take charge of your regime and make it your own.
 
 ## Technologies Used
 
@@ -30,6 +30,7 @@ A full stack application that allows you to add recipes to your meal diary. Afte
 ## Screenshots
 ### Wireframe
 ![own your MEALS wireframe](imgs/own-your-meals-wireframe.png)
+### Wireframe extras
 ![own your MEALS wireframe extra](imgs/own-your-meals-wireframe-extra.png)
 
 ### Working App 

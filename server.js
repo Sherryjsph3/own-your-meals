@@ -21,10 +21,10 @@ const db = mongoose.connection;
 
 mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
-	useUnifiedTopology: true,
-	useCreateIndex: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
     useFindAndModify: false,
-}); 
+});
 
 
 //========== SET UP SOME LISTENERS ==========
@@ -40,8 +40,12 @@ app.get('/', (req, res) => res.render('homepage.ejs'));
 
 //========== MOUNT MIDDLEWARE ==========
 
-app.use(fileUpload({ createParentPath: true }));//creates req.files
-app.use(express.urlencoded({ extended: true}));//creates req.body & has 2b 1st inorder 4 the controller 2 handle the body object
+app.use(fileUpload({
+    createParentPath: true
+})); //creates req.files
+app.use(express.urlencoded({
+    extended: true
+})); //creates req.body & has 2b 1st inorder 4 the controller 2 handle the body object
 app.use(methodOverride('_method'));
 app.use(express.static('public'));
 app.use(logger('dev')); //creates the server log
@@ -57,4 +61,4 @@ app.use('/recipes', recipesController);
 
 app.listen(port, () => {
     console.log(`Express is listening on port: ${port}`);
-})
+});

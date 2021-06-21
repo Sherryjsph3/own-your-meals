@@ -10,11 +10,12 @@
     text-align: center;
 }
 .body-home {
-    background-image: url(https://i.imgur.com/MANgDDZ.jpg);
-    background-size: 110%;
-    background-repeat: no-repeat;
+    background: url(https://i.imgur.com/MANgDDZ.jpg) no-repeat  fixed;     
+    background-size: cover;
     font-family: 'Poiret One', cursive;
     color: white;
+    max-width: 1040px;
+    height: 100%;
 }
 .p-home {
    margin-top: 390px;
@@ -39,24 +40,7 @@
     background-color: rgb(255, 255, 255, .70);
     color: black;
 }
-.fa-instagram,
-.fa-facebook,
-.fa-youtube {
-    color: white;
-    display: inline-block;
-    padding: 8px;
-    text-align: right;
-    font-size: 1.2rem;
-}
-.ftr-home {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    font-family: 'Poiret One', cursive;
-}
+
 
 /* ========== INDEX PAGE ========== */
 
@@ -81,11 +65,10 @@
     text-align: center;
 }
 .body-index {
+    background: url(https://i.imgur.com/W2vUEVD.jpg) fixed;     
+    background-size: cover;
     font-family: 'Poiret One', cursive;
-    /* background-color: rgb(233, 211, 184, 0.70); */
-    background-image: url(https://i.imgur.com/W2vUEVD.jpg);
-    background-size: 110%;
-    /* background-repeat: no-repeat; */
+    height: 100%; 
 }
 .main-index {
     display: flex;
@@ -123,23 +106,17 @@ div.hoverable {
     font-weight: bolder;
     color: black;
 }
-.ftr-index {
-    /* position: absolute; */
-    bottom: 0;
-    width: 100%;
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    color: rgb(71, 122, 65);
-}
+
 
 /* ========== SHOW PAGE ========== */
 
 .body-show {
+    background: url(https://i.imgur.com/9ytp2ce.jpg) no-repeat  fixed;     
+    background-size: cover;
     font-family: 'Poiret One', cursive;
-    background-image: url(https://i.imgur.com/9ytp2ce.jpg);
-    background-size: 110%;
-    background-repeat: no-repeat;
+    color: black;
+    max-width: 1040px;
+    height: 100%; 
 }
 .h1-show {
     text-align: center;
@@ -149,7 +126,7 @@ div.hoverable {
 .h2-show {
     text-align: center;
     font-size: 35px;
-    color: rgb(71, 122, 65, 0.70);;
+    color: rgb(71, 122, 65, 0.70);
 }
 section {
      margin: -250px auto 0px 600px;
@@ -181,7 +158,7 @@ section {
 .ashow > .bshow {
     float: right;
     font-size: 15px; 
-    margin: 3px 20px 3px 3px;
+    margin: 3px 5px 3px 3px;
     box-shadow:3px 3px 3px rgb(41, 41, 41, 0.70); 
     background-color: rgb(71, 122, 65, 0.70);
     color: white;
@@ -193,23 +170,16 @@ section {
     background-color: rgb(255, 255, 255, .70);
     color: black;
 }
-.ftr-show {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    color: rgb(71, 122, 65);
-}
+
 
 /* ========== NEW PAGE ========== */
 
 .body-new {
-    background-image: url(https://i.imgur.com/9ytp2ce.jpg);
-    background-size: 110%;
-    background-repeat: no-repeat;
-    font-family: 'Poiret One', cursive; 
+    background: url(https://i.imgur.com/9ytp2ce.jpg) no-repeat  fixed;     
+    background-size: cover;
+    font-family: 'Poiret One', cursive;
+    max-width: 1040px;
+    height: 100%;
     color: rgb(229, 109, 96);
 }
 .h1-new {
@@ -269,13 +239,11 @@ section {
     transition: 0.2s ease-in-out;
     border-radius: 10px;
   }
-
   .input-submit:hover {
     cursor: pointer;
     background: rgb(233, 141, 116, 0.70);
     box-shadow: 2px 2px 2px rgb(71, 122, 65, 0.70);
   }
-
 fieldset {
     border: 1px solid rgb(218, 190, 159);
     border-radius: 5px;
@@ -304,7 +272,6 @@ fieldset {
     transition: 1s;
     color: white;
   }
-  
   input[type=file]::file-selector-button:hover {
     background: rgb(233, 141, 116, 0.70);
     box-shadow: 1px 1px 1px rgb(71, 122, 65, 0.60);
@@ -321,29 +288,22 @@ fieldset {
     border: none;
     font-family: 'Poiret One', cursive;  
 }
-
 .anew > .bnew:hover {
     background-color: rgb(255, 255, 255, .70);
     color: black;
 }
-.ftr-new {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    color: rgb(71, 122, 65);
-}
+
 
 /* ========== EDIT PAGE ========== */
+
 .body-edit {
-    background-image: url(https://i.imgur.com/9ytp2ce.jpg);
-    background-size: 110%;
-    background-repeat: no-repeat;
-    font-family: 'Poiret One', cursive; 
+    background: url(https://i.imgur.com/9ytp2ce.jpg) no-repeat  fixed;     
+    background-size: cover;
+    font-family: 'Poiret One', cursive;
+    color: white;
+    max-width: 1040px;
+    height: 100%;
     color: rgb(229, 109, 96);
-    
 }
 .h1-edit {
     text-align: center;
@@ -403,13 +363,11 @@ fieldset {
     transition: 0.2s ease-in-out;
     border-radius: 10px;
   }
-
   .input-submit:hover {
     cursor: pointer;
     background: rgb(233, 141, 116, 0.70);
     box-shadow: 2px 2px 2px rgb(71, 122, 65, 0.70);
   }
-
 fieldset {
     border: 1px solid rgb(218, 190, 159);
     border-radius: 5px;
@@ -439,7 +397,6 @@ fieldset {
     transition: 1s;
     color: white;
   }
-  
   input[type=file]::file-selector-button:hover {
     background: rgb(233, 141, 116, 0.70);
     box-shadow: 1px 1px 1px rgb(71, 122, 65, 0.60);
@@ -449,25 +406,16 @@ fieldset {
    float: right;
     font-size: 15px; 
     box-shadow:3px 3px 3px rgb(41, 41, 41, 0.70); 
-    margin: 3px 20px 3px 3px;
+    margin: 3px 12px 3px 3px;
     background-color: rgb(71, 122, 65, 0.70);
     color: white;
     border-radius: 10px;
     border: none;
     font-family: 'Poiret One', cursive;  
 }
-
 .aedit > .bedit:hover {
     background-color: rgb(255, 255, 255, .70);
     color: black;
 }  
-.ftr-edit {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    color: rgb(71, 122, 65);
-}
+
 

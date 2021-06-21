@@ -1,7 +1,7 @@
 module.exports = [
     {
         name: 'Avocado Toast with Poached Eggs',
-        image: 'https://i.imgur.com/et44oEe.png',
+        image: 'https://i.imgur.com/GA1qKTe.jpg',
         time: '30 minutes',
         ingredients: [
             'bread',
@@ -55,7 +55,7 @@ module.exports = [
     },
     {
         name: 'Black Bean Breakfast Burrito',
-        image: 'https://i.imgur.com/lVpWvb9.jpg',
+        image: 'https://i.imgur.com/AMUKbTD.jpg',
         time: '25 minutes',
         ingredients: [
             '1 (15 ounce) can black beans',
@@ -277,7 +277,7 @@ module.exports = [
     },
     {
         name: 'Mixed Nuts',
-        image: 'https://i.imgur.com/Lsr8KZu.jpg',
+        image: 'https://i.imgur.com/tcknaVh.jpg',
         time: '1 minute',
         ingredients: [
             '10 cashews',
@@ -289,7 +289,7 @@ module.exports = [
     },
     {
         name: 'Pomegranate',
-        image: 'https://i.imgur.com/LmTW978.jpg',
+        image: 'https://i.imgur.com/EOUrLCS.jpg',
         time: '5 minutes',
         ingredients: [
             ' 1 pomegranate',

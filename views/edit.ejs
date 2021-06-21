@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
-      <!-- font awesome -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-      <!-- Google Fonts -->
-      <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <title>own your MEALS | Edit Recipe</title>
 </head>
+
 <header>
     <h1 class="h1-edit">own your MEALS</h1>
     <nav>
         <a class="aedit" href="/recipes/new"><button class="bedit">Add a New Recipe</button></a>
         <a class="aedit" href="/recipes"><button class="bedit">Diary</button></a>
         <a class="aedit" href="/"><button class="bedit">Home</button></a>
-
     </nav>
 </header>
 
@@ -32,7 +32,6 @@
             <h2 class="h2-edit">Edit Recipe</h2>
             <!-- START FORM -->
             <form action="/recipes/<%= recipe._id %>?_method=PUT " method="POST" enctype="multipart/form-data">
-
                 <!-- fieldset for meal info -->
                 <fieldset class="meal-info">
                     <!-- legend for meal info -->
@@ -52,13 +51,15 @@
                     <!-- ingredients -->
                     <label class="inpt-lable" for="ingredients">Ingredients</label>
                     <% recipe.ingredients.forEach(ingredient => { %>
-                    
-                    <input class="input-edit" type="text" name="ingredients" id="ingredients" value="<%= ingredient %>"/>
+
+                    <input class="input-edit" type="text" name="ingredients" id="ingredients"
+                        value="<%= ingredient %>" />
                     <% } )%>
 
                     <!-- directions -->
                     <label class="inpt-lable" for="directions">Directions</label>
-                    <input class="input-edit" type="text" name="directions" id="directions" value="<%= recipe.directions %>" />
+                    <input class="input-edit" type="text" name="directions" id="directions"
+                        value="<%= recipe.directions %>" />
 
                     <!-- submit button -->
                     <input class="input-submit" type="submit" value="Edit Recipe">
@@ -66,8 +67,5 @@
         </div>
     </div>
 </body>
-<footer class="ftr-edit">
-    <p>copyright &copy; all rights reserved 2021 own your MEALS</p>
-</footer>
 
 </html>

@@ -14,13 +14,12 @@ cloudinary.config({
     api_secret: process.env.API_SECRET
 });
 
+
 //========== SEED ==========
 
 const recipeSeed = require('../models/recipeSeed.js');
-
 router.get('/seed', (req, res) => {
     Recipe.deleteMany({}, (error, allRecipes) => {});
-
     Recipe.create(recipeSeed, (error, data) => {
         res.redirect('/recipes');
     });
@@ -57,7 +56,6 @@ router.delete('/:id', (req, res) => {
 //========== UPDATE ==========
 
 router.put('/:id', (req, res) => {
-
     const photo = req.files.image
     photo.mv(`./uploads/${photo.name}`);
     cloudinary.uploader.upload(`./uploads/${photo.name}`, function (error, result) {
@@ -68,22 +66,21 @@ router.put('/:id', (req, res) => {
             new: true
         }, (err, updatedRecipe) => { //new:true returns the updated document
             res.redirect(`/recipes/${req.params.id}`) //will take u to that recipe show page
-        })
-})
-})
+        });
+});
+});
 
 
 //========== CREATE ==========
 
 router.post('/', (req, res) => {
-
     const photo = req.files.image
     photo.mv(`./uploads/${photo.name}`);
     cloudinary.uploader.upload(`./uploads/${photo.name}`, function (error, result) {
         req.body.image = result.secure_url;
+        console.log(req.files)
         const splits = req.body.ingredients.split(",");
         req.body.ingredients = splits
-        // console.log(splits);
         Recipe.create(req.body, (err, recipe) => {
             res.redirect(`/recipes/${recipe._id}`);
 
