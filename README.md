@@ -32,6 +32,8 @@ A full stack application that allows you to add recipes to your meal diary. Afte
 ![own your MEALS wireframe](imgs/own-your-meals-wireframe.png)
 ### Wireframe extras
 ![own your MEALS wireframe extra](imgs/own-your-meals-wireframe-extra.png)
+### ERD
+![own your MEALS ERD](imgs/own-your-meals-erd.png)
 
 ### Working App 
 ![own your MEALS hompage](imgs/own-your-meals-home.png)
