@@ -189,7 +189,7 @@ section {
     background: url(https://i.imgur.com/9ytp2ce.jpg) no-repeat  fixed;     
     background-size: cover;
     font-family: 'Poiret One', cursive;
-    max-width: 1040px;
+    /* max-width: 1040px; */
     height: 100%;
     color: rgb(229, 109, 96);
 }
@@ -201,8 +201,8 @@ section {
     font-weight: lighter;
 }
 .container {
-    width: 65vw;
-    height: 55vw;
+    width: 936px;
+    /* height: 55vw; */
     margin: 150px auto;
     display: flex;
     border-radius: 20px;
@@ -432,6 +432,9 @@ fieldset {
   .img-show {
     margin-right: 30px;
   }
+  .container {
+    width: 767px;
+  }
 }
 @media (max-width: 767px) {
   .p-home {
@@ -455,10 +458,22 @@ fieldset {
     max-width: 330px;
     margin: 0 auto;
   }
+  .container{
+display: block;
+border-radius: 0;
+width: 100%;
+  }
+  .sidebar{
+    display: none;
+  }
+  .new-recipe {
+    width: 100%;
+    border-radius: 0;
+  }
 }
 
 @media (max-width: 457px) {
-  .h1-home , .h1-index {
+  .h1-home , .h1-index, .h1-show, .h1-new {
     font-size: 48px;
   }
   .mid-menu {
