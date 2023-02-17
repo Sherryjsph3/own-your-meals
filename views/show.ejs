@@ -15,47 +15,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS 3.4<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    Bootstrap JS 3.4<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" async></script> -->
+
 
     <title>own your MEALS | Show Recipe</title>
 </head>
 
-<header class="hdr-show">
-    <h1 class="h1-show">own your MEALS</h1>
-    <a class="ashow" href="/recipes/new"><button class="bshow">Add a New Recipe</button></a>
-    <a class="ashow" href="/recipes/<%= recipe. id %>/edit"><button class="bshow">Edit</button></a>
-    <a class="ashow" href="/recipes"><button class="bshow">Diary</button></a>
-    <a class="ashow" href="/"><button class="bshow">Home</button></a>
-
-</header>
-<br />
-<br />
 
 <body class="body-show">
+    <header class="hdr-show">
+        <h1 class="h1-show">own your MEALS</h1>
+        <div class="show-pg-nav">
+            <a class="ashow" href="/recipes/new"><button class="bshow">Add a New Recipe</button></a>
+            <a class="ashow" href="/recipes/<%= recipe. id %>/edit"><button class="bshow">Edit</button></a>
+            <a class="ashow" href="/recipes"><button class="bshow">Diary</button></a>
+            <a class="ashow" href="/"><button class="bshow">Home</button></a>
+        </div>
+    
+    </header>
+    <br />
+    <br />
 
     <h2 class="h2-show"><%= recipe.name %> </h2>
     <br />
-    <img class="img-show" src="<%= recipe.image %>">
+    <div class="show-pg-details">
+        <div >
+            <img class="img-show" src="<%= recipe.image %>">
+        </div>
+        <div >
+            <section>
 
-    <section>
+                <h3 class="h3-show">Time:</h3> <%= recipe.time %>
+                <h3 class="h3-show">Ingredients:</h3>
+                <ul>
+                    <% for(let i = 0; i < recipe.ingredients.length; i++)
+                { %>
+                    <li><%= recipe.ingredients[i] %></li>
+                    <% } %>
+                </ul>
+                <h3 class="h3-show">Directions:</h3>
+                <p> <%= recipe.directions %></p>
+                <br />
+                <br />
 
-        <h3 class="h3-show">Time:</h3> <%= recipe.time %>
-        <h3 class="h3-show">Ingredients:</h3>
-        <ul>
-            <% for(let i = 0; i < recipe.ingredients.length; i++)
-        { %>
-            <li><%= recipe.ingredients[i] %></li>
-            <% } %>
-        </ul>
-        <h3 class="h3-show">Directions:</h3>
-        <p> <%= recipe.directions %></p>
-        <br />
-        <br />
-
-        <form action="/recipes/<%=recipe._id%>?_method=DELETE" method="POST">
-            <a class="ashow" href="/recipes"><button
-                    class="bnshow">Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X</button></a>
-        </form>
-    </section>
+                <form action="/recipes/<%=recipe._id%>?_method=DELETE" method="POST">
+                    <a class="ashow" href="/recipes"><button
+                            class="bnshow">Delete&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X</button></a>
+                </form>
+            </section>
+        </div>
+    </div>
 
 </body>
 

@@ -10,13 +10,14 @@
     text-align: center;
 }
 .body-home {
-    background: url(https://i.imgur.com/MANgDDZ.jpg) no-repeat  fixed;     
+    background: url(https://i.imgur.com/MANgDDZ.jpg) no-repeat center;     
     background-size: cover;
     font-family: 'Poiret One', cursive;
     color: white;
-    max-width: 1040px;
-    height: 100%;
-}
+    width: 100%;
+    /* max-width: 1040px; */
+    height: 100vh;
+  }
 .p-home {
    margin-top: 390px;
     padding: 40px;
@@ -73,8 +74,9 @@
 .main-index {
     display: flex;
     flex-wrap: wrap;
-    max-width: 900px;
-    margin: 110px 80px 20px auto;
+    margin: 110px auto;
+    justify-content: center;
+    align-items: center;
 }
 div.hoverable {
     width: 175px;
@@ -115,8 +117,16 @@ div.hoverable {
     background-size: cover;
     font-family: 'Poiret One', cursive;
     color: black;
-    max-width: 1040px;
+    /* max-width: 1040px; */
     height: 100%; 
+}
+.show-pg-nav {
+  margin-right: 45px;
+}
+.show-pg-details {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
 .h1-show {
     text-align: center;
@@ -129,11 +139,12 @@ div.hoverable {
     color: rgb(71, 122, 65, 0.70);
 }
 section {
-     margin: -250px auto 0px 600px;
-    max-width: 300px;  
+     /* margin: -250px auto 0px 600px; */
+    max-width: 400px;  
 }
 .img-show {
-    margin-left: 230px;
+    /* margin-left: 230px; */
+    margin-right: 50px;
     width: 300px;
     border-radius: 20px;
     box-shadow:4px 4px 4px rgb(41, 41, 41, 0.70); 
@@ -417,5 +428,66 @@ fieldset {
     background-color: rgb(255, 255, 255, .70);
     color: black;
 }  
+@media (max-width: 991px) {
+  .img-show {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .p-home {
+    margin-top: 390px;
+    font-size: 20px;
+ }
+ .h1-show {
+  font-size: 48px;
+ }
 
+ .show-pg-details {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+ }
+ .img-show {
+    margin-right: 0;
+    width: 280px;
+  }
+  section {
+    max-width: 330px;
+    margin: 0 auto;
+  }
+}
 
+@media (max-width: 457px) {
+  .h1-home , .h1-index {
+    font-size: 48px;
+  }
+  .mid-menu {
+    margin: 0 auto;
+    text-align: center;
+  }
+ .tag > .click {
+    margin: 0 auto;
+    left: 0;
+    font-size: 18px;
+ }
+ .p-home {
+    font-size: 18px;
+    padding: 40px 0;
+    text-align: center;
+ }
+ .main-index {
+  margin: 80px auto;
+ }
+ .show-pg-nav {
+  margin-right: 20px;
+ }
+
+}
+@media (max-width: 375px) {
+  .h2-index {
+    font-size: 32px;
+    margin: 90px auto 0;
+    text-align: center;
+}
+
+}
