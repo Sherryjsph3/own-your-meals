@@ -125,7 +125,7 @@ div.hoverable {
 }
 .show-pg-details {
   display: flex;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   justify-content: center;
 }
 .h1-show {
@@ -312,7 +312,7 @@ fieldset {
     background-size: cover;
     font-family: 'Poiret One', cursive;
     color: white;
-    max-width: 1040px;
+    /* max-width: 1040px; */
     height: 100%;
     color: rgb(229, 109, 96);
 }
@@ -324,9 +324,9 @@ fieldset {
     font-weight: lighter;
 }
  .container-edit {
-    width: 55vw;
-    height: 45vw;
-    margin: 160px auto;
+    width: 894px;
+    /* height: 45vw; */
+    margin: 150px auto;
     display: flex;
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgb(41, 41, 41, 0.60);
@@ -417,7 +417,7 @@ fieldset {
    float: right;
     font-size: 15px; 
     box-shadow:3px 3px 3px rgb(41, 41, 41, 0.70); 
-    margin: 3px 12px 3px 3px;
+    margin: 3px 20px 3px 3px;
     background-color: rgb(71, 122, 65, 0.70);
     color: white;
     border-radius: 10px;
@@ -432,9 +432,10 @@ fieldset {
   .img-show {
     margin-right: 30px;
   }
-  .container {
+  .container, .container-edit {
     width: 767px;
   }
+  
 }
 @media (max-width: 767px) {
   .p-home {
@@ -447,7 +448,7 @@ fieldset {
 
  .show-pg-details {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 25px;
     text-align: center;
  }
  .img-show {
@@ -458,22 +459,22 @@ fieldset {
     max-width: 330px;
     margin: 0 auto;
   }
-  .container{
-display: block;
-border-radius: 0;
-width: 100%;
+  .container, .container-edit{
+    display: block;
+    border-radius: 0;
+    width: 100%;
   }
-  .sidebar{
+  .sidebar, .sidebar-edit{
     display: none;
   }
-  .new-recipe {
+  .new-recipe, .edit-recipe {
     width: 100%;
     border-radius: 0;
   }
 }
 
 @media (max-width: 457px) {
-  .h1-home , .h1-index, .h1-show, .h1-new {
+  .h1-home , .h1-index, .h1-show, .h1-new, .h1-edit{
     font-size: 48px;
   }
   .mid-menu {
